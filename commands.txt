@@ -1,61 +1,23 @@
-> Lines beginning with `>` are comments. 
-> Comments and empty lines are ignored.
->
-> Each command is defined on a single line comprised of:
-> 
->   1. a case-insensitive, alpha-numeric trigger followed 
->      by whitespace
->   2. a url followed by whitespace (if the url contains 
->      spaces they must be encoded as `%20`)
->   3. a short description
-> 
-> Urls may contain the following replacement tokens:
-> 
->   1. `%s` is replaced by any search terms that were
->       provided when a command is triggered.
->   2. `%r` is replaced by the url of the page you were on 
->       when Shortwave was invoked, eg. the `tr` trigger.
->   3. `%d` is replaced by just the domain of the url you were
->       on when Shortwave was invoked, eg. the `gs` trigger.
->   4. `%t` is replaced by the page title of the url you were 
->       on when Shortwave was invoked, eg. the `e` trigger.
-> 
-> A special `*` trigger can be used to define an untriggered 
-> search. For instance, adding the following:
-> 
->   * http://www.google.com/search?q=%s Untriggered search
->
-> to your custom command file would allow you to do a Google
-> Search by entering just a search term (without the `g` trigger) 
-> in the Shortwave prompt.
-> 
-> The following default triggers do not need to be redefined 
-> in your custom command file but they may be overridden. They 
-> can be eliminated entirely by adding the following to the 
-> top of your custom command file:
-> 
->   > #kill-defaults
-> 
-> Enjoy!
+> http://shortwaveapp.com/
 
+#kill-defaults
 
-g       http://www.google.com/search?q=%s                   Google Search
-gs      http://www.google.com/search?q=site:%d%20%s         Search the current site
-map     http://www.google.com/maps?q=%s                     Google Maps
-img     http://www.google.com/images?q=%s                   Google Image Search
-tr      http://translate.google.com/translate?u=%r&tl=%s    Translate the current page
-d       http://www.google.com/search?q=define:%s            Google Define a word
-> d		http://freedictionary.org/?Query=%s					Free Dictionary				
-w       http://wikipedia.org/wiki/Special:Search/%s         Wikipedia Search
-php     http://php.net/search.php?show=quickref&pattern=%s  PHP Function Search
-a       http://amazon.com/s/?url=search-alias%3Daps&field-keywords=%s          Amazon Search
-imdb    http://www.imdb.com/find?s=all&q=%s                 IMDB Search
-f       http://flickr.com/search/?q=%s                      Flickr Search
-tu      http://twitter.com/%s                               Twitter User
-tw      http://search.twitter.com/search?q=%s               Twitter Search (was Summize)
-yt      http://www.youtube.com/results.php?search_query=%s  YouTube Search
-v       http://vimeo.com/videos/search:%s                   Vimeo Search
-ip      http://www.whatismyip.org/                          IP Address
-whois   http://www.whois-search.com/whois/%s                whois Search
-t       http://tyda.se/search?form=1&w=%s&w_lang=           Tyda
-ripe    http://www.db.ripe.net/whois?form_type=simple&full_query_string=&searchtext=%s&do_search=Search Ripe
+g      http://www.google.com/search?q=%s                                Google Search
+gs     http://www.google.com/search?q=site:%d%20%s                      Search the current site
+map    http://www.google.com/maps?q=%s                                  Google Maps
+img    http://www.google.com/images?q=%s                                Google Image Search
+tr     http://translate.google.com/translate?u=%r&tl=%s                 Translate the current page
+d      http://www.google.com/search?q=define:%s                         Google Define a word
+w      http://wikipedia.org/wiki/Special:Search/%s                      Wikipedia Search
+php    http://php.net/search.php?show=quickref&pattern=%s               PHP Function Search
+a      http://amazon.com/s/?url=search-alias%3Daps&field-keywords=%s    Amazon Search
+imdb   http://www.imdb.com/find?s=all&q=%s                              IMDB Search
+f      http://flickr.com/search/?q=%s                                   Flickr Search
+tu     http://twitter.com/%s                                            Twitter User
+tw     http://search.twitter.com/search?q=%s                            Twitter Search (was Summize)
+yt     http://www.youtube.com/results.php?search_query=%s               YouTube Search
+v      http://vimeo.com/videos/search:%s                                Vimeo Search
+ip     http://www.whatismyip.org/                                       IP Address
+whois  http://www.whois-search.com/whois/%s                             whois Search
+t      http://tyda.se/search?form=1&w=%s&w_lang=                        Tyda
+ripe   http://www.db.ripe.net/whois?form_type=simple&full_query_string=&searchtext=%s&do_search=Search Ripe

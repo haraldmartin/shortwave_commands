@@ -7,7 +7,7 @@ gs     http://www.google.com/search?q=site:%d%20%s                      Search t
 map    http://www.google.com/maps?q=%s                                  Google Maps
 img    http://www.google.com/images?q=%s                                Google Image Search
 tr     http://translate.google.com/translate?u=%r&tl=%s                 Translate the current page
-d      http://www.google.com/search?q=define:%s                         Google Define a word
+def    http://www.google.com/search?q=define:%s                         Google Define a word
 w      http://wikipedia.org/wiki/Special:Search/%s                      Wikipedia Search
 php    http://php.net/search.php?show=quickref&pattern=%s               PHP Function Search
 a      http://amazon.com/s/?url=search-alias%3Daps&field-keywords=%s    Amazon Search
@@ -21,3 +21,4 @@ ip     http://www.whatismyip.org/                                       IP Addre
 whois  http://www.whois-search.com/whois/%s                             whois Search
 t      http://tyda.se/search?form=1&w=%s&w_lang=                        Tyda
 ripe   http://www.db.ripe.net/whois?form_type=simple&full_query_string=&searchtext=%s&do_search=Search Ripe
+d      http://www.delicious.com/marstr/%s                               Delicious Tag
